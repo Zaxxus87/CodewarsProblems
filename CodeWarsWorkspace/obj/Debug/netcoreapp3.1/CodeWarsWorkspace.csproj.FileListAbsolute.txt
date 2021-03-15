@@ -1,0 +1,13 @@
+C:\Users\jeffr\Desktop\repos\CodeWars\CodeWarsWorkspace\CodeWarsWorkspace\bin\Debug\netcoreapp3.1\CodeWarsWorkspace.exe
+C:\Users\jeffr\Desktop\repos\CodeWars\CodeWarsWorkspace\CodeWarsWorkspace\bin\Debug\netcoreapp3.1\CodeWarsWorkspace.deps.json
+C:\Users\jeffr\Desktop\repos\CodeWars\CodeWarsWorkspace\CodeWarsWorkspace\bin\Debug\netcoreapp3.1\CodeWarsWorkspace.runtimeconfig.json
+C:\Users\jeffr\Desktop\repos\CodeWars\CodeWarsWorkspace\CodeWarsWorkspace\bin\Debug\netcoreapp3.1\CodeWarsWorkspace.runtimeconfig.dev.json
+C:\Users\jeffr\Desktop\repos\CodeWars\CodeWarsWorkspace\CodeWarsWorkspace\bin\Debug\netcoreapp3.1\CodeWarsWorkspace.dll
+C:\Users\jeffr\Desktop\repos\CodeWars\CodeWarsWorkspace\CodeWarsWorkspace\bin\Debug\netcoreapp3.1\CodeWarsWorkspace.pdb
+C:\Users\jeffr\Desktop\repos\CodeWars\CodeWarsWorkspace\CodeWarsWorkspace\obj\Debug\netcoreapp3.1\CodeWarsWorkspace.csprojAssemblyReference.cache
+C:\Users\jeffr\Desktop\repos\CodeWars\CodeWarsWorkspace\CodeWarsWorkspace\obj\Debug\netcoreapp3.1\CodeWarsWorkspace.AssemblyInfoInputs.cache
+C:\Users\jeffr\Desktop\repos\CodeWars\CodeWarsWorkspace\CodeWarsWorkspace\obj\Debug\netcoreapp3.1\CodeWarsWorkspace.AssemblyInfo.cs
+C:\Users\jeffr\Desktop\repos\CodeWars\CodeWarsWorkspace\CodeWarsWorkspace\obj\Debug\netcoreapp3.1\CodeWarsWorkspace.csproj.CoreCompileInputs.cache
+C:\Users\jeffr\Desktop\repos\CodeWars\CodeWarsWorkspace\CodeWarsWorkspace\obj\Debug\netcoreapp3.1\CodeWarsWorkspace.dll
+C:\Users\jeffr\Desktop\repos\CodeWars\CodeWarsWorkspace\CodeWarsWorkspace\obj\Debug\netcoreapp3.1\CodeWarsWorkspace.pdb
+C:\Users\jeffr\Desktop\repos\CodeWars\CodeWarsWorkspace\CodeWarsWorkspace\obj\Debug\netcoreapp3.1\CodeWarsWorkspace.genruntimeconfig.cache
