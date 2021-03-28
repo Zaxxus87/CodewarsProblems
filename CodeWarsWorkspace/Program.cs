@@ -1,5 +1,8 @@
 ﻿using System;
 using System.Text.RegularExpressions;
+using System.Linq;
+using System.Collections.Generic;
+
 
 namespace CodeWarsWorkspace
 {
@@ -7,16 +10,17 @@ namespace CodeWarsWorkspace
     {
         static void Main(string[] args)
         {
-            Console.WriteLine(calculate("1+2"));
+            int[] test = new int[] { 1, 2, 3, 4, 5, 6 };
+            int[] answer = PartsSums(test);
+
+            foreach(int num in answer)
+                Console.Write($"{num} ");
         }
 
-        public static double calculate(String s)
+        
+        public static int[] PartsSums(int[] ls)
         {
-            double ans = 0.0;
-            foreach (Char c in s)
-                if (Char.IsDigit(c))
-                    ans += c;
-            return ans;
+            return ls.Reverse().Aggregate(Enumerable.Repeat(0, 1), (a, i) => a.Prepend(a.First() + i)).ToArray();
         }
     }
 }

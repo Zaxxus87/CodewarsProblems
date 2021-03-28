@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\jeffr\\Desktop\\repos\\CodeWars\\CodeWarsWorkspace\\CodeWarsWorkspace\\CodeWarsWorkspace.csproj": {}
+    "C:\\Users\\jeffr\\Desktop\\repos\\CodewarsProblems\\CodeWarsWorkspace\\CodeWarsWorkspace.csproj": {}
   },
   "projects": {
-    "C:\\Users\\jeffr\\Desktop\\repos\\CodeWars\\CodeWarsWorkspace\\CodeWarsWorkspace\\CodeWarsWorkspace.csproj": {
+    "C:\\Users\\jeffr\\Desktop\\repos\\CodewarsProblems\\CodeWarsWorkspace\\CodeWarsWorkspace.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\jeffr\\Desktop\\repos\\CodeWars\\CodeWarsWorkspace\\CodeWarsWorkspace\\CodeWarsWorkspace.csproj",
+        "projectUniqueName": "C:\\Users\\jeffr\\Desktop\\repos\\CodewarsProblems\\CodeWarsWorkspace\\CodeWarsWorkspace.csproj",
         "projectName": "CodeWarsWorkspace",
-        "projectPath": "C:\\Users\\jeffr\\Desktop\\repos\\CodeWars\\CodeWarsWorkspace\\CodeWarsWorkspace\\CodeWarsWorkspace.csproj",
+        "projectPath": "C:\\Users\\jeffr\\Desktop\\repos\\CodewarsProblems\\CodeWarsWorkspace\\CodeWarsWorkspace.csproj",
         "packagesPath": "C:\\Users\\jeffr\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\jeffr\\Desktop\\repos\\CodeWars\\CodeWarsWorkspace\\CodeWarsWorkspace\\obj\\",
+        "outputPath": "C:\\Users\\jeffr\\Desktop\\repos\\CodewarsProblems\\CodeWarsWorkspace\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\jeffr\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -54,7 +54,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     }
