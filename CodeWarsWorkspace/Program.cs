@@ -14,51 +14,72 @@ namespace CodeWarsWorkspace
             int[] test = new int[] { 1, 2, 3, 4, 5, 6 };
             int[] answer = PartsSums(test);
 
-            foreach(int num in answer)
-                Console.Write($"{num} ");
+            
             */
-            long x = findNb(1846180868795488225);
-            Console.WriteLine(x);
-
+            var y = Primes(1101);
+            var x = SameFactRev(2500000);
+            foreach(int num in x)
+                Console.WriteLine(num);
 
         }
 
-        public static long findNb(long m)
+
+        public static int[] SameFactRev(int nMax)
         {
-            long cubes = 0;
-            int n = 1;
-            while (m > 0)
+            var ans = new List<int>();
+            for (int i = 1089; i < nMax; i++)
             {
-                cubes += 1;
-                m = (long)(m - (long)(Math.Pow(n, 3)));
-                Console.WriteLine($"{n} - {m}");
-                if (n == 10)
-                    Console.ReadLine();
-                n++;
+                if (i != ReverseNum(i))
+                {
+                    var set1 = new HashSet<int>(Primes(i));
+                    var set2 = new HashSet<int>(Primes(ReverseNum(i)));
+                    if (set1.SetEquals(set2))
+                        ans.Add(i);
+                }
+                
+            }              
+            return ans.ToArray();
+        }
+        
+        public static int ReverseNum(int num)
+        {
+            int ans = 0;
+            int i = 0;
+            while (num > 0)
+            {
+                ans = ans * 10 + num % 10;
+                i++;
+                num /= 10;
             }
-            if (m == 0)
-                return cubes;
-            return -1;
+            return ans;
         }
 
-        public static List<int> Primes(int num)
+        public static int[] Primes(int num)
+        {
+              List<int> ans = new List<int>();
+              int n = num;
+              while(n%2 == 0)
+              {
+                    ans.Add(2);
+                    n /= 2;                
+              }
+            for (int i = 3; i <= Math.Sqrt(n); i = i + 2)
             {
-                List<int> ans = new List<int>();
-                int n = num;
-                for(int i = 2; i<=n; i++)
+                while (n % i == 0)
                 {
-                   while(n%i == 0)
-                   {
-                      ans.Add(i);
-                      n /= i;
-                   }
+                    ans.Add(i);
+                    n /= i;
                 }
-
-                return ans;
             }
+            if (n > 2)
+                ans.Add(n);
+            
+                return ans.ToArray();
+            
+        }
             public static bool Solve(int a, int b)
             {
-                List<int> factors = Primes(b);
+                int[] factors = Primes(b);
                 foreach (int factor in factors)
                     if (a % factor != 0)
                         return false;
