@@ -10,28 +10,20 @@ namespace CodeWarsWorkspace
     {
         static void Main(string[] args)
         {
-            Console.WriteLine(High("what time are we climbing up to the volcano"));
-            Console.WriteLine(High("a b"));           
+            Console.WriteLine(TwiceAsOld(30, 0));
+            Console.WriteLine(TwiceAsOld(30, 7));           
 
         }
 
-        public static string High(string s)
-        {   
-            var ray = s.Split(" ");
-            int max = 0;
-
-            for (int i = 1; i < ray.Length; i++)
-                if (PointVal(ray[max]) < PointVal(ray[i]))
-                    max = i;
-            return ray[max];
-        }
-        public static int PointVal(string word)
+        public static int TwiceAsOld(int dadYears, int sonYears)
         {
-            int points = 0;
-            string check = "_abcdefghijklmnopqrstuvwxyz";
-            foreach (char c in word)
-                points += check.IndexOf(c);
-            return points;
+            var twice = sonYears * 2;
+            if (twice < dadYears)
+                return dadYears - twice;
+            else if (twice > dadYears)
+                return twice - dadYears;
+            else
+                return 0;
         }
     }
 }
