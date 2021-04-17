@@ -10,20 +10,30 @@ namespace CodeWarsWorkspace
     {
         static void Main(string[] args)
         {
-            Console.WriteLine(TwiceAsOld(30, 0));
-            Console.WriteLine(TwiceAsOld(30, 7));           
+            Console.WriteLine(NbDig(0, 0));
+                  
 
         }
 
-        public static int TwiceAsOld(int dadYears, int sonYears)
+        public static int ContainsDig(int num, int digit)
         {
-            var twice = sonYears * 2;
-            if (twice < dadYears)
-                return dadYears - twice;
-            else if (twice > dadYears)
-                return twice - dadYears;
-            else
-                return 0;
+            int count = 0;
+            while (num > 0)
+            {
+                if (num % 10 == digit)
+                    count++;
+                num /= 10;
+            }
+            return count;
+        }
+
+        public static int NbDig(int n, int d)
+        {
+            int count = 0;
+            for (int i = 0; i < n + 1; i++)
+                count += (ContainsDig(i * i, d));
+            return count;
+
         }
     }
 }
