@@ -10,30 +10,18 @@ namespace CodeWarsWorkspace
     {
         static void Main(string[] args)
         {
-            Console.WriteLine(NbDig(0, 0));
-                  
+            int[] test = new int[] { 1, -2, 2, 3, -4 };
+            Console.WriteLine(AverageEvens(test));
 
         }
 
-        public static int ContainsDig(int num, int digit)
+       
+        public static double AverageEvens(int[] numbers)
         {
-            int count = 0;
-            while (num > 0)
-            {
-                if (num % 10 == digit)
-                    count++;
-                num /= 10;
-            }
-            return count;
-        }
-
-        public static int NbDig(int n, int d)
-        {
-            int count = 0;
-            for (int i = 0; i < n + 1; i++)
-                count += (ContainsDig(i * i, d));
-            return count;
-
+            if (numbers == null || numbers.Length == 0)
+                return 0;
+            var evens = numbers.Where(x => x % 2 == 0);
+            return (double)evens.Sum() / evens.Count();
         }
     }
 }
