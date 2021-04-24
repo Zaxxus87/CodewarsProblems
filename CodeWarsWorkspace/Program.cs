@@ -10,18 +10,32 @@ namespace CodeWarsWorkspace
     {
         static void Main(string[] args)
         {
-            int[] test = new int[] { 1, -2, 2, 3, -4 };
-            Console.WriteLine(AverageEvens(test));
+            string guess = Buddy(48, 50);
+            foreach (var item in collection)
+            {
+
+            }
+
+            //{ 20, 20, 19, 16, 10, 0 });
 
         }
 
-       
-        public static double AverageEvens(int[] numbers)
+
+        public static string Buddy(long start, long limit)
         {
-            if (numbers == null || numbers.Length == 0)
-                return 0;
-            var evens = numbers.Where(x => x % 2 == 0);
-            return (double)evens.Sum() / evens.Count();
+            List<int> buddy1 = new List<int>() { 1 };
+            List<int> buddy2 = new List<int>() { 1 };
+            for (int i = (int)start; i <= limit; i++)
+            {
+                int stop = (int)(Math.Sqrt(i));
+                for (int j = 2; j < stop; j++)
+                    if (i % j == 0)
+                    {
+                        buddy1.Add(j);
+                        buddy2.Add(i / j);
+                    }
+            }
+            return buddy1.ToString();
         }
     }
 }
