@@ -10,9 +10,31 @@ namespace CodeWarsWorkspace
     {
         static void Main(string[] args)
         {
-            var theAns = Solve(12, 20, 18, 45, 30, 60);
-            foreach(int num in theAns)
-                Console.WriteLine(num);
+            string problem = "\n\n\na\nb\n\n";
+            string[] stringRay = problem.Split("\n");
+            string[] commentSymbols = new string[] { "#", "!" };
+            int index = 0;
+            for (int i = 0; i < stringRay.Length; i++)
+            {
+                for (int j = 0; j < commentSymbols.Length; j++)
+                {
+                    index = stringRay[i].IndexOf(commentSymbols[j]);
+                    if (index >= 0)
+                    {
+                        stringRay[i] = stringRay[i].Substring(0, index);
+                        stringRay[i] = stringRay[i].TrimEnd();
+                    }
+                }
+            }
+            string ans = "";
+            for (int i = 0; i < stringRay.Length - 1; i++)
+                if (String.IsNullOrEmpty(ans))
+                    ans += "\n";
+                else
+                    ans += stringRay[i];
+            ans += stringRay[stringRay.Length - 1];
+
+            Console.WriteLine(ans);
             //[15, 135, 49, 18]
 
         }
